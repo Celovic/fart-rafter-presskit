@@ -51,8 +51,9 @@ figure { margin: 0; background: var(--surface); border: 1px solid var(--border);
 figure a { display: block; }
 figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 figcaption { padding: 10px 14px; font-size: 14px; color: var(--muted); }
-.wide { grid-column: 1 / -1; }
-.wide img { aspect-ratio: auto; }
+.items { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.items img { aspect-ratio: 600 / 373; }
+figcaption strong { color: var(--text); }
 .about { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; box-shadow: var(--shadow); }
 .about p { margin: 0 0 12px; }
 .about p:last-child { margin-bottom: 0; }
@@ -87,6 +88,8 @@ footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
 <div class="grid">
   <figure><a href="images/03-yaris-lav-firtina.jpg"><img src="images/03-yaris-lav-firtina.jpg" alt="Lav Nehri haritasında fırtınalı yarış" loading="lazy"></a><figcaption>Lav Nehri · Fırtına havası</figcaption></figure>
   <figure><a href="images/04-yaris-eglence.jpg"><img src="images/04-yaris-eglence.jpg" alt="Eğlence haritasında yarış" loading="lazy"></a><figcaption>Eğlence haritası · havadaki kaydıraklar</figcaption></figure>
+  <figure><a href="images/07-yaris-eklenti-engel.jpg"><img src="images/07-yaris-eklenti-engel.jpg" alt="Eğlence haritasında dikenli topak eklenti ve engeller" loading="lazy"></a><figcaption>Eğlence · dikenli topak ve yoldaki eklenti</figcaption></figure>
+  <figure><a href="images/08-yaris-lav-topu.jpg"><img src="images/08-yaris-lav-topu.jpg" alt="Lav Nehri'nde düşen lav topu" loading="lazy"></a><figcaption>Lav Nehri · düşen lav topu ve fırtına</figcaption></figure>
   <figure><a href="images/02-kurulum-lav-firtina.jpg"><img src="images/02-kurulum-lav-firtina.jpg" alt="Avatar, kostüm, sal ve hava seçimi" loading="lazy"></a><figcaption>Avatar, kostüm, sal, harita ve hava seçimi</figcaption></figure>
   <figure><a href="images/01-ana-menu.jpg"><img src="images/01-ana-menu.jpg" alt="Ana menü" loading="lazy"></a><figcaption>Ana menü</figcaption></figure>
   <figure><a href="images/05-online-lobi.jpg"><img src="images/05-online-lobi.jpg" alt="Online lobi" loading="lazy"></a><figcaption>Online lobi · 6 haneli oda kodu</figcaption></figure>
@@ -107,33 +110,43 @@ footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
 </div>
 
 <h2>Yarıştan kareler</h2>
+<p>Her haritada salın önüne çıkan kendine özgü yırtıcı.</p>
 <div class="grid">
-  <figure><a href="images/2-yaris-river.jpg"><img src="images/2-yaris-river.jpg" alt="Nehirde yarış" loading="lazy"></a><figcaption>Nehir</figcaption></figure>
-  <figure><a href="images/2-yaris-polar.jpg"><img src="images/2-yaris-polar.jpg" alt="Kutupta yarış" loading="lazy"></a><figcaption>Kutup</figcaption></figure>
-  <figure><a href="images/2-yaris-ocean.jpg"><img src="images/2-yaris-ocean.jpg" alt="Okyanusta yarış" loading="lazy"></a><figcaption>Okyanus</figcaption></figure>
-  <figure><a href="images/2-yaris-fun.jpg"><img src="images/2-yaris-fun.jpg" alt="Eğlence haritasında yarış" loading="lazy"></a><figcaption>Eğlence</figcaption></figure>
-  <figure><a href="images/2-yaris-lava.jpg"><img src="images/2-yaris-lava.jpg" alt="Lav nehrinde yarış" loading="lazy"></a><figcaption>Lav Nehri</figcaption></figure>
-  <figure><a href="images/2-yaris-night.jpg"><img src="images/2-yaris-night.jpg" alt="Gece ormanında yarış" loading="lazy"></a><figcaption>Gece Ormanı</figcaption></figure>
-  <figure><a href="images/2-yaris-desert.jpg"><img src="images/2-yaris-desert.jpg" alt="Çöl kanyonunda yarış" loading="lazy"></a><figcaption>Çöl Kanyonu</figcaption></figure>
-  <figure><a href="images/2-yaris-swamp.jpg"><img src="images/2-yaris-swamp.jpg" alt="Bataklıkta yarış" loading="lazy"></a><figcaption>Bataklık</figcaption></figure>
+  <figure><a href="images/5-yirtici-river.jpg"><img src="images/5-yirtici-river.jpg" alt="Nehir haritasında timsah" loading="lazy"></a><figcaption>Nehir · Timsah</figcaption></figure>
+  <figure><a href="images/5-yirtici-polar.jpg"><img src="images/5-yirtici-polar.jpg" alt="Kutup haritasında orka" loading="lazy"></a><figcaption>Kutup · Orka</figcaption></figure>
+  <figure><a href="images/5-yirtici-ocean.jpg"><img src="images/5-yirtici-ocean.jpg" alt="Okyanus haritasında köpek balığı" loading="lazy"></a><figcaption>Okyanus · Köpek balığı</figcaption></figure>
+  <figure><a href="images/5-yirtici-fun.jpg"><img src="images/5-yirtici-fun.jpg" alt="Eğlence haritasında dikenli silindir" loading="lazy"></a><figcaption>Eğlence · Dikenli silindir</figcaption></figure>
+  <figure><a href="images/5-yirtici-lava.jpg"><img src="images/5-yirtici-lava.jpg" alt="Lav Nehri haritasında ateş semenderi" loading="lazy"></a><figcaption>Lav Nehri · Ateş semenderi</figcaption></figure>
+  <figure><a href="images/5-yirtici-night.jpg"><img src="images/5-yirtici-night.jpg" alt="Gece Ormanı haritasında dev yayın balığı" loading="lazy"></a><figcaption>Gece Ormanı · Dev yayın balığı</figcaption></figure>
+  <figure><a href="images/5-yirtici-desert.jpg"><img src="images/5-yirtici-desert.jpg" alt="Çöl Kanyonu haritasında timsah" loading="lazy"></a><figcaption>Çöl Kanyonu · Timsah</figcaption></figure>
+  <figure><a href="images/5-yirtici-swamp.jpg"><img src="images/5-yirtici-swamp.jpg" alt="Bataklık haritasında bataklık timsahı" loading="lazy"></a><figcaption>Bataklık · Bataklık timsahı</figcaption></figure>
 </div>
 
 <h2>Final kovalamacası</h2>
-<p>Zor ve Uzman modunda son bölümde haritaya özgü dev bir hayvan salı kovalar.</p>
+<p>Zor ve Uzman modunda bitiş çizgisine yaklaşırken haritaya özgü dev bir hayvan salı kovalar.</p>
 <div class="grid">
-  <figure><a href="images/3-kovalamaca-polar.jpg"><img src="images/3-kovalamaca-polar.jpg" alt="Kutup ayısı" loading="lazy"></a><figcaption>Kutup Ayısı</figcaption></figure>
-  <figure><a href="images/3-kovalamaca-ocean.jpg"><img src="images/3-kovalamaca-ocean.jpg" alt="Dev ahtapot" loading="lazy"></a><figcaption>Dev Ahtapot</figcaption></figure>
-  <figure><a href="images/3-kovalamaca-fun.jpg"><img src="images/3-kovalamaca-fun.jpg" alt="Oyuncak ejderha" loading="lazy"></a><figcaption>Oyuncak Ejderha</figcaption></figure>
-  <figure><a href="images/3-kovalamaca-lava.jpg"><img src="images/3-kovalamaca-lava.jpg" alt="Dev ateş semenderi" loading="lazy"></a><figcaption>Dev Ateş Semenderi</figcaption></figure>
-  <figure><a href="images/3-kovalamaca-night.jpg"><img src="images/3-kovalamaca-night.jpg" alt="Kurt sürüsü" loading="lazy"></a><figcaption>Kurt Sürüsü</figcaption></figure>
-  <figure><a href="images/3-kovalamaca-desert.jpg"><img src="images/3-kovalamaca-desert.jpg" alt="Dev akrep" loading="lazy"></a><figcaption>Dev Akrep</figcaption></figure>
-  <figure><a href="images/3-kovalamaca-river.jpg"><img src="images/3-kovalamaca-river.jpg" alt="Dev timsah" loading="lazy"></a><figcaption>Dev Timsah</figcaption></figure>
-  <figure><a href="images/3-kovalamaca-swamp.jpg"><img src="images/3-kovalamaca-swamp.jpg" alt="Dev kurbağa" loading="lazy"></a><figcaption>Dev Kurbağa</figcaption></figure>
+  <figure><a href="images/6-final-river.jpg"><img src="images/6-final-river.jpg" alt="Nehir haritasında bitişe yakın dev timsah kovalıyor" loading="lazy"></a><figcaption>Nehir · Dev Timsah</figcaption></figure>
+  <figure><a href="images/6-final-polar.jpg"><img src="images/6-final-polar.jpg" alt="Kutup haritasında bitişe yakın kutup ayısı kovalıyor" loading="lazy"></a><figcaption>Kutup · Kutup Ayısı</figcaption></figure>
+  <figure><a href="images/6-final-ocean.jpg"><img src="images/6-final-ocean.jpg" alt="Okyanus haritasında bitişe yakın dev ahtapot kovalıyor" loading="lazy"></a><figcaption>Okyanus · Dev Ahtapot</figcaption></figure>
+  <figure><a href="images/6-final-fun.jpg"><img src="images/6-final-fun.jpg" alt="Eğlence haritasında bitişe yakın oyuncak ejderha kovalıyor" loading="lazy"></a><figcaption>Eğlence · Oyuncak Ejderha</figcaption></figure>
+  <figure><a href="images/6-final-lava.jpg"><img src="images/6-final-lava.jpg" alt="Lav Nehri haritasında bitişe yakın dev ateş semenderi kovalıyor" loading="lazy"></a><figcaption>Lav Nehri · Dev Ateş Semenderi</figcaption></figure>
+  <figure><a href="images/6-final-night.jpg"><img src="images/6-final-night.jpg" alt="Gece Ormanı haritasında bitişe yakın kurt sürüsü kovalıyor" loading="lazy"></a><figcaption>Gece Ormanı · Kurt Sürüsü</figcaption></figure>
+  <figure><a href="images/6-final-desert.jpg"><img src="images/6-final-desert.jpg" alt="Çöl Kanyonu haritasında bitişe yakın dev akrep kovalıyor" loading="lazy"></a><figcaption>Çöl Kanyonu · Dev Akrep</figcaption></figure>
+  <figure><a href="images/6-final-swamp.jpg"><img src="images/6-final-swamp.jpg" alt="Bataklık haritasında bitişe yakın dev kurbağa kovalıyor" loading="lazy"></a><figcaption>Bataklık · Dev Kurbağa</figcaption></figure>
 </div>
 
 <h2>Eklentiler</h2>
-<div class="grid">
-  <figure class="wide"><a href="images/4-eklentiler.jpg"><img src="images/4-eklentiler.jpg" alt="Tamir kiti, kalkan ve mıknatıs eklentileri" loading="lazy"></a><figcaption>Tamir Kiti · Kalkan · Mıknatıs (ayrıca fasulye, pastırma, soğan, nohut, acı biber, yumurta)</figcaption></figure>
+<p>Suda yüzen 9 eklenti; salın canı kendiliğinden dolmaz, Tamir Kiti bulmak gerekir.</p>
+<div class="grid items">
+  <figure><a href="images/7-eklenti-beans.jpg"><img src="images/7-eklenti-beans.jpg" alt="Kuru Fasulye" loading="lazy"></a><figcaption><strong>Kuru Fasulye</strong> · Gaz deposu ×1,5</figcaption></figure>
+  <figure><a href="images/7-eklenti-pastirma.jpg"><img src="images/7-eklenti-pastirma.jpg" alt="Pastırma" loading="lazy"></a><figcaption><strong>Pastırma</strong> · Osuruk gücü ×1,5</figcaption></figure>
+  <figure><a href="images/7-eklenti-onion.jpg"><img src="images/7-eklenti-onion.jpg" alt="Soğan" loading="lazy"></a><figcaption><strong>Soğan</strong> · Sınırsız gaz</figcaption></figure>
+  <figure><a href="images/7-eklenti-chickpea.jpg"><img src="images/7-eklenti-chickpea.jpg" alt="Nohut" loading="lazy"></a><figcaption><strong>Nohut</strong> · Herkesin gazı dolar</figcaption></figure>
+  <figure><a href="images/7-eklenti-pepper.jpg"><img src="images/7-eklenti-pepper.jpg" alt="Acı Biber" loading="lazy"></a><figcaption><strong>Acı Biber</strong> · Turbo ×2</figcaption></figure>
+  <figure><a href="images/7-eklenti-egg.jpg"><img src="images/7-eklenti-egg.jpg" alt="Haşlanmış Yumurta" loading="lazy"></a><figcaption><strong>Haşlanmış Yumurta</strong> · Zırh: hasarı emer</figcaption></figure>
+  <figure><a href="images/7-eklenti-repair.jpg"><img src="images/7-eklenti-repair.jpg" alt="Tamir Kiti" loading="lazy"></a><figcaption><strong>Tamir Kiti</strong> · Salın canı tamamen dolar</figcaption></figure>
+  <figure><a href="images/7-eklenti-bubble.jpg"><img src="images/7-eklenti-bubble.jpg" alt="Kalkan" loading="lazy"></a><figcaption><strong>Kalkan</strong> · 6 sn hiçbir şey zarar veremez</figcaption></figure>
+  <figure><a href="images/7-eklenti-magnet.jpg"><img src="images/7-eklenti-magnet.jpg" alt="Mıknatıs" loading="lazy"></a><figcaption><strong>Mıknatıs</strong> · Yakındaki eklentileri çeker</figcaption></figure>
 </div>
 
 <h2>Oyun hakkında</h2>
