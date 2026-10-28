@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fart Rafter · Basın Kiti</title>
+<meta name="description" content="Fart Rafter — Two Hearts Games. 1–4 kişilik, osurarak sal yarıştırılan komik ekip oyunu. Ekran görüntüleri ve oyun bilgileri.">
+<link rel="icon" href="images/icon.png">
+<style>
+:root {
+  --bg: #fdf8ec;
+  --surface: #ffffff;
+  --text: #2a2418;
+  --muted: #6b6150;
+  --accent: #f2b400;
+  --accent-ink: #3a2c00;
+  --border: #eadfc6;
+  --shadow: 0 6px 24px rgba(60, 45, 10, 0.12);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17140f;
+    --surface: #221e16;
+    --text: #f3ead6;
+    --muted: #b8ab90;
+    --accent: #ffc928;
+    --accent-ink: #2a2000;
+    --border: #3a3326;
+    --shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: var(--shadow); }
+h1 { margin: 0; font-size: clamp(32px, 6vw, 52px); line-height: 1.1; }
+.studio { margin: 4px 0 0; color: var(--muted); font-weight: 600; }
+.lead { font-size: 18px; max-width: 760px; margin: 24px 0 8px; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; padding: 0; list-style: none; }
+.facts li { background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 999px; }
+h2 { margin: 48px 0 8px; font-size: 26px; }
+h2 + p { margin-top: 0; color: var(--muted); }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+figure a { display: block; }
+figure img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+figcaption { padding: 10px 14px; font-size: 14px; color: var(--muted); }
+.wide { grid-column: 1 / -1; }
+.wide img { aspect-ratio: auto; }
+.about { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; box-shadow: var(--shadow); }
+.about p { margin: 0 0 12px; }
+.about p:last-child { margin-bottom: 0; }
+footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+@media (max-width: 380px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="images/icon.png" alt="Fart Rafter simgesi">
+  <div>
+    <h1>Fart Rafter</h1>
+    <p class="studio">Two Hearts Games</p>
+  </div>
+</header>
+
+<p class="lead">1–4 kişinin aynı salın üzerinde osurarak nehirden aşağı yarıştığı komik bir ekip oyunu. Sal ancak herkesin itişi aynı yöne birleştiğinde ilerler; gaz deposu sınırlıdır, kimin ne zaman osuracağını takım planlar.</p>
+<p class="lead" lang="en">A silly co-op racing game where 1–4 players propel one shared raft down the river by farting. The raft only moves when everyone pushes the same way, and gas is limited, so the team has to plan who fires and when.</p>
+
+<ul class="facts">
+  <li>Android</li>
+  <li>1–4 oyuncu</li>
+  <li>Online + botlar</li>
+  <li>8 harita</li>
+  <li>Reklamsız</li>
+  <li>Unity 6</li>
+</ul>
+
+<h2>Telefondan oyun içi görüntüler</h2>
+<p>Gerçek cihazda (Android) alınmış ekran görüntüleri.</p>
+<div class="grid">
+  <figure><a href="images/03-yaris-lav-firtina.jpg"><img src="images/03-yaris-lav-firtina.jpg" alt="Lav Nehri haritasında fırtınalı yarış" loading="lazy"></a><figcaption>Lav Nehri · Fırtına havası</figcaption></figure>
+  <figure><a href="images/04-yaris-eglence.jpg"><img src="images/04-yaris-eglence.jpg" alt="Eğlence haritasında yarış" loading="lazy"></a><figcaption>Eğlence haritası · havadaki kaydıraklar</figcaption></figure>
+  <figure><a href="images/02-kurulum-lav-firtina.jpg"><img src="images/02-kurulum-lav-firtina.jpg" alt="Avatar, kostüm, sal ve hava seçimi" loading="lazy"></a><figcaption>Avatar, kostüm, sal, harita ve hava seçimi</figcaption></figure>
+  <figure><a href="images/01-ana-menu.jpg"><img src="images/01-ana-menu.jpg" alt="Ana menü" loading="lazy"></a><figcaption>Ana menü</figcaption></figure>
+  <figure><a href="images/05-online-lobi.jpg"><img src="images/05-online-lobi.jpg" alt="Online lobi" loading="lazy"></a><figcaption>Online lobi · 6 haneli oda kodu</figcaption></figure>
+  <figure><a href="images/06-hizli-mesaj.jpg"><img src="images/06-hizli-mesaj.jpg" alt="Hızlı mesaj ve avatar hareketleri" loading="lazy"></a><figcaption>Serbest sohbet yok: hızlı mesaj ve avatar hareketleri</figcaption></figure>
+</div>
+
+<h2>8 harita</h2>
+<p>Her haritanın kendine özgü engeli ve yırtıcısı var.</p>
+<div class="grid">
+  <figure><a href="images/1-harita-river.jpg"><img src="images/1-harita-river.jpg" alt="Nehir haritası" loading="lazy"></a><figcaption>Nehir · timsahlar ve değirmenler</figcaption></figure>
+  <figure><a href="images/1-harita-polar.jpg"><img src="images/1-harita-polar.jpg" alt="Kutup haritası" loading="lazy"></a><figcaption>Kutup · kaygan buz ve düşen sarkıtlar</figcaption></figure>
+  <figure><a href="images/1-harita-ocean.jpg"><img src="images/1-harita-ocean.jpg" alt="Okyanus haritası" loading="lazy"></a><figcaption>Okyanus · büyük dalgalar ve girdaplar</figcaption></figure>
+  <figure><a href="images/1-harita-fun.jpg"><img src="images/1-harita-fun.jpg" alt="Eğlence haritası" loading="lazy"></a><figcaption>Eğlence · gökyüzünde kaydıraklar</figcaption></figure>
+  <figure><a href="images/1-harita-lava.jpg"><img src="images/1-harita-lava.jpg" alt="Lav Nehri haritası" loading="lazy"></a><figcaption>Lav Nehri · yağan lav topları</figcaption></figure>
+  <figure><a href="images/1-harita-night.jpg"><img src="images/1-harita-night.jpg" alt="Gece Ormanı haritası" loading="lazy"></a><figcaption>Gece Ormanı · salın feneriyle karanlıkta</figcaption></figure>
+  <figure><a href="images/1-harita-desert.jpg"><img src="images/1-harita-desert.jpg" alt="Çöl Kanyonu haritası" loading="lazy"></a><figcaption>Çöl Kanyonu · düşen kayalar</figcaption></figure>
+  <figure><a href="images/1-harita-swamp.jpg"><img src="images/1-harita-swamp.jpg" alt="Bataklık haritası" loading="lazy"></a><figcaption>Bataklık · sazlıklar ve gayzerler</figcaption></figure>
+</div>
+
+<h2>Yarıştan kareler</h2>
+<div class="grid">
+  <figure><a href="images/2-yaris-river.jpg"><img src="images/2-yaris-river.jpg" alt="Nehirde yarış" loading="lazy"></a><figcaption>Nehir</figcaption></figure>
+  <figure><a href="images/2-yaris-polar.jpg"><img src="images/2-yaris-polar.jpg" alt="Kutupta yarış" loading="lazy"></a><figcaption>Kutup</figcaption></figure>
+  <figure><a href="images/2-yaris-ocean.jpg"><img src="images/2-yaris-ocean.jpg" alt="Okyanusta yarış" loading="lazy"></a><figcaption>Okyanus</figcaption></figure>
+  <figure><a href="images/2-yaris-fun.jpg"><img src="images/2-yaris-fun.jpg" alt="Eğlence haritasında yarış" loading="lazy"></a><figcaption>Eğlence</figcaption></figure>
+  <figure><a href="images/2-yaris-lava.jpg"><img src="images/2-yaris-lava.jpg" alt="Lav nehrinde yarış" loading="lazy"></a><figcaption>Lav Nehri</figcaption></figure>
+  <figure><a href="images/2-yaris-night.jpg"><img src="images/2-yaris-night.jpg" alt="Gece ormanında yarış" loading="lazy"></a><figcaption>Gece Ormanı</figcaption></figure>
+  <figure><a href="images/2-yaris-desert.jpg"><img src="images/2-yaris-desert.jpg" alt="Çöl kanyonunda yarış" loading="lazy"></a><figcaption>Çöl Kanyonu</figcaption></figure>
+  <figure><a href="images/2-yaris-swamp.jpg"><img src="images/2-yaris-swamp.jpg" alt="Bataklıkta yarış" loading="lazy"></a><figcaption>Bataklık</figcaption></figure>
+</div>
+
+<h2>Final kovalamacası</h2>
+<p>Zor ve Uzman modunda son bölümde haritaya özgü dev bir hayvan salı kovalar.</p>
+<div class="grid">
+  <figure><a href="images/3-kovalamaca-polar.jpg"><img src="images/3-kovalamaca-polar.jpg" alt="Kutup ayısı" loading="lazy"></a><figcaption>Kutup Ayısı</figcaption></figure>
+  <figure><a href="images/3-kovalamaca-ocean.jpg"><img src="images/3-kovalamaca-ocean.jpg" alt="Dev ahtapot" loading="lazy"></a><figcaption>Dev Ahtapot</figcaption></figure>
+  <figure><a href="images/3-kovalamaca-fun.jpg"><img src="images/3-kovalamaca-fun.jpg" alt="Oyuncak ejderha" loading="lazy"></a><figcaption>Oyuncak Ejderha</figcaption></figure>
+  <figure><a href="images/3-kovalamaca-lava.jpg"><img src="images/3-kovalamaca-lava.jpg" alt="Dev ateş semenderi" loading="lazy"></a><figcaption>Dev Ateş Semenderi</figcaption></figure>
+  <figure><a href="images/3-kovalamaca-night.jpg"><img src="images/3-kovalamaca-night.jpg" alt="Kurt sürüsü" loading="lazy"></a><figcaption>Kurt Sürüsü</figcaption></figure>
+  <figure><a href="images/3-kovalamaca-desert.jpg"><img src="images/3-kovalamaca-desert.jpg" alt="Dev akrep" loading="lazy"></a><figcaption>Dev Akrep</figcaption></figure>
+  <figure><a href="images/3-kovalamaca-river.jpg"><img src="images/3-kovalamaca-river.jpg" alt="Dev timsah" loading="lazy"></a><figcaption>Dev Timsah</figcaption></figure>
+  <figure><a href="images/3-kovalamaca-swamp.jpg"><img src="images/3-kovalamaca-swamp.jpg" alt="Dev kurbağa" loading="lazy"></a><figcaption>Dev Kurbağa</figcaption></figure>
+</div>
+
+<h2>Eklentiler</h2>
+<div class="grid">
+  <figure class="wide"><a href="images/4-eklentiler.jpg"><img src="images/4-eklentiler.jpg" alt="Tamir kiti, kalkan ve mıknatıs eklentileri" loading="lazy"></a><figcaption>Tamir Kiti · Kalkan · Mıknatıs (ayrıca fasulye, pastırma, soğan, nohut, acı biber, yumurta)</figcaption></figure>
+</div>
+
+<h2>Oyun hakkında</h2>
+<div class="about">
+  <p><strong>Ana mekanik:</strong> Her oyuncu kendi karakterini döndürür ve osuruk gazıyla salı iter. Gaz deposu sınırlı, dolması zaman alıyor. Her an "şimdi mi osurayım, gazımı mı saklayayım?" kararı veriliyor; güçlü bir ters akıntıya boş depoyla giren takım geri sürüklenir, geç kalana timsah yetişir.</p>
+  <p><strong>Çeşitlilik:</strong> 8 avatar (her birinin osuruk gücü, depo ve dolum hızı farklı), avatar başına 4 kostüm, dayanıklılık ve hızlanması farklı 5 sal türü (sal, kayık, şişme bot, dev simit, küvet). Sal osurukla ilerledikçe hız kazanır (süzülme).</p>
+  <p><strong>Modlar:</strong> Alıştırma ve Macera (Kolay / Orta / Zor / Uzman), seçilebilir hava durumu (Açık, Yağmur, Sis, Fırtına), günlük görevler, puan listeleri ve rozetler.</p>
+  <p><strong>Online:</strong> İnternet üzerinden 6 haneli oda koduyla veya arkadaş davetiyle; serbest metin sohbeti yok, yalnız hızlı mesaj ve avatar hareketleri. Tek cihazda 1–4 kişi ve botlarla oynanabiliyor.</p>
+  <p><strong>Aile dostu:</strong> Reklam yok, ebeveyn kontrolü ve 13 yaş altı için otomatik takma adlar var.</p>
+</div>
+
+<footer>© 2026 Two Hearts Games · Fart Rafter. Görseller oyunun geliştirme sürümünden alınmıştır.</footer>
+</main>
+</body>
+</html>
